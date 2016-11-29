@@ -1,0 +1,36 @@
+.coming-soon {
+  font-size: 24px;
+  color: white;
+  font-weight: 900;
+  text-align: center;
+  font-family: 'Bungee', cursive;
+  font-style: uppercase; }
+
+#holder {
+  min-width: 600px;
+  margin: 0 auto;
+  text-align: center;
+  position: relative;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -o-user-select: none;
+  user-select: none; }
+
+#slogans {
+  position: relative;
+  top: 0px; }
+
+p.slogan {
+  word-break: break-all;
+  text-rendering: optimizeLegibility;
+  font-size: 60px;
+  text-transform: uppercase;
+  text-align: center;
+  margin: 0px auto;
+  width: 100%; }
+
+p.slogan strong {
+  display: block;
+  position: relative;
+  opacity: 0; }

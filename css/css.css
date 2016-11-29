@@ -1,0 +1,144 @@
+html,
+body {
+  background: #070b15 radial-gradient(closest-corner, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.1));
+  overflow: hidden;
+  width: 100%;
+  height: 100%; }
+
+@keyframes outer {
+  from {
+    transform: rotate(0); }
+  to {
+    transform: rotate(1turn); } }
+
+.outer {
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  animation: outer linear 3s infinite; }
+
+.inner {
+  width: .1em;
+  height: .1em;
+  font-size: 20vmin;
+  position: absolute;
+  margin: -.1em 0 0 -.1em; }
+
+.inner:nth-child(2) {
+  transform: rotate(40deg); }
+
+.inner:nth-child(3) {
+  transform: rotate(80deg); }
+
+.inner:nth-child(4) {
+  transform: rotate(120deg); }
+
+.inner:nth-child(5) {
+  transform: rotate(160deg); }
+
+.inner:nth-child(6) {
+  transform: rotate(200deg); }
+
+.inner:nth-child(7) {
+  transform: rotate(240deg); }
+
+.inner:nth-child(8) {
+  transform: rotate(280deg); }
+
+.inner:nth-child(9) {
+  transform: rotate(320deg); }
+
+@keyframes after {
+  from {
+    transform: translateX(0.25); }
+  50% {
+    transform: translateX(-30vmin);
+    -webkit-filter: hue-rotate(360deg);
+    filter: hue-rotate(360deg); } }
+
+.inner::after {
+  content: '';
+  display: block;
+  border-radius: 50%;
+  font-size: 20px;
+  width: 1em;
+  height: 1em;
+  position: absolute;
+  top: 100%;
+  left: 100%;
+  animation: after 3s infinite;
+  color: #0ff;
+  background: radial-gradient(currentColor, transparent 75%);
+  transform-origin: center; }
+
+.hide {
+  opacity: 0;
+  transition: opacity .5s; }
+
+.inner:nth-child(1)::after {
+  animation-delay: 1s; }
+
+.inner:nth-child(1)::after,
+.inner:nth-child(1) :after {
+  color: #ffaa00; }
+
+.inner:nth-child(2)::after {
+  animation-delay: 2s; }
+
+.inner:nth-child(2)::after,
+.inner:nth-child(2) :after {
+  color: #aaff00; }
+
+.inner:nth-child(3)::after {
+  animation-delay: 3s; }
+
+.inner:nth-child(3)::after,
+.inner:nth-child(3) :after {
+  color: lime; }
+
+.inner:nth-child(4)::after {
+  animation-delay: 4s; }
+
+.inner:nth-child(4)::after,
+.inner:nth-child(4) :after {
+  color: #00ffaa; }
+
+.inner:nth-child(5)::after {
+  animation-delay: 5s; }
+
+.inner:nth-child(5)::after,
+.inner:nth-child(5) :after {
+  color: #00aaff; }
+
+.inner:nth-child(6)::after {
+  animation-delay: 6s; }
+
+.inner:nth-child(6)::after,
+.inner:nth-child(6) :after {
+  color: blue; }
+
+.inner:nth-child(7)::after {
+  animation-delay: 7s; }
+
+.inner:nth-child(7)::after,
+.inner:nth-child(7) :after {
+  color: #aa00ff; }
+
+.inner:nth-child(8)::after {
+  animation-delay: 8s; }
+
+.inner:nth-child(8)::after,
+.inner:nth-child(8) :after {
+  color: #ff00aa; }
+
+.inner:nth-child(9)::after {
+  animation-delay: 9s; }
+
+.inner:nth-child(9)::after,
+.inner:nth-child(9) :after {
+  color: red; }
+
+.inner:nth-child(even) {
+  animation-direction: reverse; }
